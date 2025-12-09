@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        REPO_URL = "http://git-server:3000/max/python-app.git"
+        REPO_URL = "https://github.com/pranavsharma16/python-app.git"
         REPO_DIR = "${WORKSPACE}/python-app"  // Use Jenkins workspace directory
         BRANCH_NAME = "main"
         RUN_TESTS = "true"
