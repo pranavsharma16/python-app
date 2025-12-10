@@ -3,9 +3,10 @@ FROM python:3.12-slim AS builder
 WORKDIR /app
 
 # Copy & install dependencies 
+COPY requirements.txt .
 RUN python -m venv /opt/venv && \
     /opt/venv/bin/pip install --upgrade pip && \
-    /opt/venv/bin/pip install -requirements.txt
+    /opt/venv/bin/pip install -r requirements.txt
 
 # Build app
 
