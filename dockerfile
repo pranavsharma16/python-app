@@ -25,3 +25,6 @@ ENV PATH="/opt/venv/bin:$PATH"
 # Copy application code and run
 COPY . .
 CMD ["python", "app.py"]
+
+# Expose application port
+EXPOSE 3001
